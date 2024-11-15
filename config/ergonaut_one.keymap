@@ -48,28 +48,28 @@
 
         symbol_layer {
             bindings = <
-&none  &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &none
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
-&none  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &none
-                         &trans    &trans    &trans     &trans     &trans    &trans
+&none  &kp RA(NUMBER_0)  &kp LS(NUMBER_6)  &kp LEFT_BRACE    &kp TILDE         &kp AT_SIGN       &kp MINUS  &kp LS(SLASH)               &kp LS(NUMBER_0)                &kp EQUAL                     &kp SQT                      &none  
+&none  &kp LS(NUMBER_9)  &kp LS(NUMBER_1)  &kp RA(NUMBER_2)  &kp HASH          &kp LEFT_BRACKET  &kp SLASH  &hmr RIGHT_SHIFT BACKSLASH  &hmr RIGHT_CONTROL RIGHT_BRACE  &hmr RIGHT_ALT RIGHT_BRACKET  &hmr RIGHT_WIN SEMICOLON    &none  
+&none  &kp RA(NUMBER_9)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp PIPE          &none             &none      &none                       &kp GRAVE                       &kp LS(EQUAL)                 &kp DOUBLE_QUOTES          &none  
+                                    &kp RA(NUMBER_7)  &kp RA(NUMBER_8)  &kp ASTERISK      &none      &none                       &none
             >;
         };
 
         number_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &trans        &trans        &trans    &trans
+&none  &none                   &kp NUMBER_7            &kp NUMBER_8         &kp NUMBER_9              &none  &kp F12  &kp F9               &kp F8                 &kp F7        &none           &none  
+&none  &hml LEFT_WIN NUMBER_0  &hml LEFT_ALT NUMBER_1  &hml LCTRL NUMBER_2  &hml LEFT_SHIFT NUMBER_3  &none  &kp F11  &hmr RIGHT_SHIFT F3  &hmr RIGHT_CONTROL F2  &hmr RALT F1  &kp RIGHT_GUI   &none  
+&none  &none                   &kp NUMBER_4            &kp NUMBER_5         &kp NUMBER_6              &none  &kp F10  &kp F6               &kp F5                 &kp F4        &none           &none  
+                                                &none                &none                     &none  &none    &none                &none
             >;
         };
 
         navigation_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
+&none &out OUT_BLE  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &none           &none           &none                 &none                     &none     &none 
+&none &kp LEFT_WIN  &kp LEFT_ALT      &kp LCTRL         &kp LEFT_SHIFT    &none             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW           &kp LS(PERIOD)  &none 
+&none &out OUT_USB  &bt BT_CLR_CMD 0  &bt BT_CLR_CMD 1  &bt BT_CLR_CMD 2  &bt BT_CLR_CMD 3  &none           &none           &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp LS(MINUS)  &none 
+                                &none             &none             &none             &none           &none           &none
             >;
         };
     };
