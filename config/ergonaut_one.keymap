@@ -35,6 +35,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        LHS_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <13 14 15 16 0>;
+        };
+
+        RHS_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <22 20 21 19 11>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
