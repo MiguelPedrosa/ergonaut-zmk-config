@@ -100,10 +100,10 @@
 
         Lazyness {
             bindings = <
-&trans  &trans  &trans           &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp PRINTSCREEN  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp RC(X)        &kp RC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans     &trans           &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp PRINTSCREEN  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp RC(X)        &kp RC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans     &trans     &trans  &trans  &trans  &trans
             >;
         };
     };
