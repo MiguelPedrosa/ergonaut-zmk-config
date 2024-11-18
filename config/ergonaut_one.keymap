@@ -71,10 +71,10 @@
 
         Lazyness {
             bindings = <
-&none   &none      &trans           &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp PRINTSCREEN  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp RC(X)        &kp RC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans     &trans     &trans  &trans  &trans  &trans
+&none   &none      &none           &none     &none     &none  &none  &none  &none  &none  &none  &none
+&none  &none     &kp PRINTSCREEN  &none     &none     &none  &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)  &kp RC(X)        &kp RC(C)  &kp LC(V)  &none  &none  &none  &none  &none  &none  &none
+                                    &none     &none     &none  &none  &none  &none
             >;
         };
     };
