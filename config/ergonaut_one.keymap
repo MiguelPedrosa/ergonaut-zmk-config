@@ -13,14 +13,7 @@
 &mt { quick-tap-ms = <200>; };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri-layer {
-            if-layers = <1 2>;
-            then-layer = <8>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         hm: homerow_mods {
@@ -45,7 +38,7 @@
 &none  &kp Q       &kp W       &kp E        &kp R         &kp T    &kp Y        &kp U         &kp I            &kp O       &kp P               &none
 &none  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G    &kp H        &hm RSHIFT J  &hm RCTRL K      &hm RALT L  &hm RGUI LS(COMMA)  &none
 &none  &kp Z       &kp X       &kp C        &kp V         &kp B    &kp N        &kp M         &kp COMMA        &kp DOT     &kp LS(NUMBER_7)    &none
-                               &lt 4 ESC    &lt 2 SPACE   &kp TAB  &lt 3 ENTER  &lt 1 DEL     &lt 8 BACKSPACE
+                               &lt 4 ESC    &lt 2 SPACE   &kp TAB  &lt 0 ENTER  &lt 1 DEL     &lt 3 BACKSPACE
             >;
         };
 
@@ -67,12 +60,12 @@
             >;
         };
 
-        layer_8 {
+        nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans        &trans
+&none  &out OUT_BLE  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &none     &none     &none                 &none                     &none           &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT      &kp LCTRL         &kp LEFT_SHIFT    &none             &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT                 &kp LS(PERIOD)  &none
+&none  &out OUT_USB  &bt BT_CLR_CMD 0  &bt BT_CLR_CMD 1  &bt BT_CLR_CMD 2  &bt BT_CLR_CMD 3  &none     &none     &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp LS(MINUS)   &none
+                                       &none             &none             &none             &none     &none     &none
             >;
         };
 
@@ -82,42 +75,6 @@
 &trans  &trans     &kp PRINTSCREEN  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(Z)  &kp RC(X)        &kp RC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans     &trans     &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        navigation_layer {
-            bindings = <
-&none  &out OUT_BLE  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &none     &none     &none                 &none                     &none           &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT      &kp LCTRL         &kp LEFT_SHIFT    &none             &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT                 &kp LS(PERIOD)  &none
-&none  &out OUT_USB  &bt BT_CLR_CMD 0  &bt BT_CLR_CMD 1  &bt BT_CLR_CMD 2  &bt BT_CLR_CMD 3  &none     &none     &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp LS(MINUS)   &none
-                                       &none             &none             &none             &none     &none     &none
             >;
         };
     };
